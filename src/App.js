@@ -1,23 +1,24 @@
-import logo from './logo.svg';
+
 import './App.css';
+import {useState} from "react";
+
 
 function App() {
+
+  const alertInput = (value) => {
+    alert(value);
+  }
+
+
+  let welcome = "Welcome to hack week";
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Trying out React</h1>
+          <button onClick={() => alert(welcome)}>
+            Click the button for a suprise!
+          </button>
     </div>
   );
 }
